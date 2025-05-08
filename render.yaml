@@ -1,6 +1,6 @@
 services:
   - type: web
-    name: config
+    name: simplif-ai
     env: python
     buildCommand: "pip install -r requirements.txt"
     startCommand: "gunicorn config.wsgi:application"
@@ -9,3 +9,9 @@ services:
         value: config.settings
       - key: PYTHON_VERSION
         value: 3.9
+      - key: SECRET_KEY
+        value: mr61+s(w^c_*tvu6mjo=o=t-m@-23&ce&gmxoo++3jhff!-d=w
+      - key: DEBUG
+        value: "False"
+      - key: ALLOWED_HOSTS
+        value: simplif-ai.onrender.com
