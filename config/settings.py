@@ -20,7 +20,7 @@ import os
 BASE_DIR = Path(__file__).resolve().parent.parent
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False  # ⚠️ en production
+DEBUG = true  # ⚠️ en production
 ALLOWED_HOSTS = ['*']  # ou ['ton-nom-projet.onrender.com']
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')  # ajouter si manquant
 
@@ -129,7 +129,7 @@ USE_TZ = True
 
 STATIC_URL = "/static/"
 STATIC_ROOT = os.path.join(BASE_DIR, "staticfiles")
-STATICFILES_STORAGE = "whitenoise.storage.CompressedManifestStaticFilesStorage"
+#STATICFILES_STORAGE = "whitenoise.storage.CompressedManifestStaticFilesStorage"
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
