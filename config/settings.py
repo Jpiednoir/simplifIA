@@ -20,7 +20,7 @@ import os
 BASE_DIR = Path(__file__).resolve().parent.parent
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = true  # ⚠️ en production
+DEBUG = True  # ⚠️ en production
 ALLOWED_HOSTS = ['*']  # ou ['ton-nom-projet.onrender.com']
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')  # ajouter si manquant
 
