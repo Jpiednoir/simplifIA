@@ -24,6 +24,7 @@ from core import views  # ⬅️ Import des vues depuis ton app
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', views.index, name='home'),              # Accueil
+    path('new/', views.new_index, name='new_home'),  # Accueil
     path('produits/', views.produits, name='produits'),  # Page solutions IA
     path('contact/', views.contact, name='contact'),     # Page contact
     path('a-propos/', views.apropos, name='a_propos'),
