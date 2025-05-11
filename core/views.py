@@ -15,3 +15,6 @@ def contact(request):
 
 def apropos(request):
     return render(request, 'a-propos.html')
+
+def new_index(request):
+    return render(request, 'new_index.html')
